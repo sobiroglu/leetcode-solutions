@@ -1,10 +1,10 @@
 package com.sobiroglu
 
-import com.sobiroglu.solutions.Problem219
+import com.sobiroglu.solutions.Problem395_2
 
 
 fun main() {
-    val obj = Problem219()
-    val result = obj.containsNearbyDuplicate(intArrayOf(1,2,3,1,2,3), 2)
+    val obj = Problem395_2()
+    val result = obj.longestSubstring("bbaaacbd", 3)
     print(result)
 }
