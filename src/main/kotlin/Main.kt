@@ -1,10 +1,10 @@
 package com.sobiroglu
 
-import com.sobiroglu.solutions.Problem413
+import com.sobiroglu.solutions.Problem424
 
 
 fun main() {
-    val obj = Problem413()
-    val result = obj.numberOfArithmeticSlices(intArrayOf(1,2,3,8,9,10))
+    val obj = Problem424()
+    val result = obj.characterReplacement("AABABBA", 1)
     print(result)
 }
