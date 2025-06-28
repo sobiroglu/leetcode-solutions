@@ -1,10 +1,10 @@
 package com.sobiroglu
 
-import com.sobiroglu.solutions.Problem424
+import com.sobiroglu.solutions.Problem643
 
 
 fun main() {
-    val obj = Problem424()
-    val result = obj.characterReplacement("AABABBA", 1)
+    val obj = Problem643()
+    val result = obj.findMaxAverage(intArrayOf(-1), 1)
     print(result)
 }
