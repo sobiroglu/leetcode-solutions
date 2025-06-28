@@ -1,10 +1,10 @@
 package com.sobiroglu
 
-import com.sobiroglu.solutions.Problem395_2
+import com.sobiroglu.solutions.Problem413
 
 
 fun main() {
-    val obj = Problem395_2()
-    val result = obj.longestSubstring("bbaaacbd", 3)
+    val obj = Problem413()
+    val result = obj.numberOfArithmeticSlices(intArrayOf(1,2,3,8,9,10))
     print(result)
 }
