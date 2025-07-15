@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem3 {
+class Solution0003 {
     fun lengthOfLongestSubstring(s: String): Int {
         if (s.isEmpty()) return 0
         if (s.length == 1) return 1

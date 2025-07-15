@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem713 {
+class Solution0713 {
     fun numSubarrayProductLessThanK(nums: IntArray, k: Int): Int {
         if (k <= 1) return 0
 

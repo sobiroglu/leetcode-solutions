@@ -1,6 +1,8 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem567 {
+import kotlin.text.iterator
+
+class Solution0567 {
     fun checkInclusion(s1: String, s2: String): Boolean {
         var start = 0
         val freqs = IntArray(26)

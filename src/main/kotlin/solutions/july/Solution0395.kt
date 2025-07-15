@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem395 {
+class Solution0395 {
     fun longestSubstring(s: String, k: Int): Int {
         var leftIndicator = 0
         var rightIndicator = 0

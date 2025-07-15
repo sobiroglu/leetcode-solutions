@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem643 {
+class Solution0643 {
     fun findMaxAverage(nums: IntArray, k: Int): Double {
         var windowSum = 0L
 

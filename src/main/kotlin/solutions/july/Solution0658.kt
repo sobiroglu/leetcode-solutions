@@ -1,8 +1,8 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
 import kotlin.math.abs
 
-class Problem658 {
+class Solution0658 {
     fun findClosestElements(arr: IntArray, k: Int, x: Int): List<Int> {
         var start = 0
         var end = arr.size - 1

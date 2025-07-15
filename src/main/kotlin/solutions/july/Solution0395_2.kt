@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem395_2 {
+class Solution0395_2 {
     fun longestSubstring(s: String, k: Int): Int {
         var result = 0
 

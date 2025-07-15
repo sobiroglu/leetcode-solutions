@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem424 {
+class Solution0424 {
     /**
      * Counts the most frequent character in the window.
      * Checks whether the number of characters to change (window size - maxCount) is within k.

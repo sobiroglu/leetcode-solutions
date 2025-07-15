@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem209 {
+class Solution0209 {
     fun minSubArrayLen(target: Int, nums: IntArray): Int {
         if (nums.isEmpty()) return 0
 

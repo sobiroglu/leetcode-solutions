@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem187 {
+class Solution0187 {
     fun findRepeatedDnaSequences(s: String): List<String> {
         if (s.length < 10) return emptyList()
 

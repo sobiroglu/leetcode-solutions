@@ -1,8 +1,8 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
 import kotlin.math.abs
 
-class Problem219 {
+class Solution0219 {
     fun containsNearbyDuplicate(nums: IntArray, k: Int): Boolean {
         if (nums.size == 1) return false
 

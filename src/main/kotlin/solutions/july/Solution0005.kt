@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Solution5 {
+class Solution0005 {
     fun longestPalindrome(s: String): String {
         val n = s.length
         var start = 0

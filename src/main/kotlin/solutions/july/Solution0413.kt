@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem413 {
+class Solution0413 {
     fun numberOfArithmeticSlices(nums: IntArray): Int {
         if (nums.size < 3) return 0
 

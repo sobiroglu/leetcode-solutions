@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem594 {
+class Solution0594 {
     fun findLHS(nums: IntArray): Int {
         val map = HashMap<Int, Int>()
         var result = 0

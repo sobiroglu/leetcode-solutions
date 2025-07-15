@@ -1,6 +1,6 @@
-package com.sobiroglu.solutions
+package com.sobiroglu.solutions.july
 
-class Problem438 {
+class Solution0438 {
     fun findAnagrams(s: String, p: String): List<Int> {
         var start = 0
         val freqs = IntArray(26) // frequencies
