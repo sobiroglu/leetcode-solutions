@@ -24,6 +24,32 @@ class Solution0045_3 {
     }
 }
 
+//fun jump(nums: IntArray): Int {
+//    if (nums.size == 1) return 0
+//
+//    val dp = IntArray(nums.size) { -1 }
+//    dp[nums.size - 1] = 0
+//
+//    for (i in nums.size - 2 downTo 0) {
+//        if (nums[i] == 0) continue
+//        for (move in 1..nums[i]) {
+//            if (i + move >= nums.size - 1) {
+//                dp[i] = 1
+//                continue
+//            }
+//            if (dp[i + move] == -1) continue
+//
+//            if (dp[i] == -1) {
+//                dp[i] = dp[i + move] + 1
+//            } else {
+//                dp[i] = minOf(dp[i], dp[i + move] + 1)
+//            }
+//        }
+//    }
+//
+//    return dp[0]
+//}
+
 /**
  * class Solution45 {
  *     fun jump(nums: IntArray): Int {
