@@ -1,10 +1,10 @@
 package com.sobiroglu
 
-import com.sobiroglu.solutions.july.Solution0070_2
+import com.sobiroglu.solutions.july.Solution0091_2
 
 
 fun main() {
-    val obj = Solution0070_2()
-    val result = obj.climbStairs(3)
+    val obj = Solution0091_2()
+    val result = obj.numDecodings("2263")
     print(result)
 }
