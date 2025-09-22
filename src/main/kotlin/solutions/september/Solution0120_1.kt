@@ -4,15 +4,14 @@ package com.sobiroglu.solutions.september
 class Solution0120_1 {
     fun minimumTotal(triangle: List<List<Int>>): Int {
         val rowSize = triangle.size
-        val lastColumnSize = triangle[rowSize - 1].size
 
-        val memo = Array(rowSize) { Array<Int?>(lastColumnSize) { null } }
+        val memo = Array(rowSize) { row -> Array<Int?>(triangle[row].size) { null } }
         return findPath(triangle, 0, 0, memo)
     }
 
     private fun findPath(triangle: List<List<Int>>, row: Int, column: Int, memo: Array<Array<Int?>>): Int {
         if (row == triangle.size - 1) return triangle[row][column]
-        if (memo[row][column] != null) return memo[row][column]!!
+        memo[row][column]?.let { return it }
 
         val left = findPath(triangle, row + 1, column, memo)
         val right = findPath(triangle, row + 1, column + 1, memo)
