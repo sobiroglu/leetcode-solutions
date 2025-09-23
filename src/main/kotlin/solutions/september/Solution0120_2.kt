@@ -1,10 +1,25 @@
 package com.sobiroglu.solutions.september
 
+class Solution0120_2 {
+    fun minimumTotal(triangle: List<List<Int>>): Int {
+        val lastRowSize = triangle.last().size
+        val dp = Array(lastRowSize) { 0 }
+
+        for (i in 0 until dp.size) {
+            dp[i] = triangle.last()[i]
+        }
+
+        for (i in triangle.size - 2 downTo 0) {
+            for (j in 0 until  triangle[i].size) {
+                dp[j] = triangle[i][j] + minOf(dp[j], dp[j + 1])
+            }
+        }
+
+        return dp[0]
+    }
+}
+
 /** Tabulation (bottom-up)
- *
- * Nice 👌 tabulation (bottom-up DP) is actually a perfect fit for this problem, and it will make your code much simpler than recursion + memoization. Let me give you a **roadmap** without code, just the thought process:
- *
- * ---
  *
  * ### 1. Core idea
  *
@@ -60,81 +75,3 @@ package com.sobiroglu.solutions.september
  * 👉 That’s the whole flow. Once you’ve walked through this idea, the actual code is \~6–8 lines and way cleaner than recursion.*
  *
  * */
-class Solution0120_2 {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//function minimumTotal(triangle):
-//n = number of rows in triangle
-//
-//// Step 1: initialize dp with the last row
-//dp = copy of triangle[n-1]
-//
-//// Step 2: work upward from second-last row to top
-//for row from n-2 down to 0:
-//for col from 0 to row:
-//dp[col] = triangle[row][col] + min(dp[col], dp[col+1])
-//
-//// Step 3: answer is at the top
-//return dp[0]
